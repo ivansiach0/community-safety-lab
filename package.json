@@ -1,0 +1,20 @@
+{
+  "name": "community-safety-lab",
+  "private": true,
+  "packageManager": "pnpm@12.10.1",
+  "engines": {
+    "node": "24.21.0",
+    "pnpm": "12.10.1"
+  },
+  "scripts": {
+    "build:web": "pnpm --filter @community-safety-lab/web build",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint:web": "pnpm --filter @community-safety-lab/web lint",
+    "test:web": "pnpm --filter @community-safety-lab/web test",
+    "typecheck:web": "pnpm --filter @community-safety-lab/web typecheck"
+  },
+  "devDependencies": {
+    "prettier": "3.9.0"
+  }
+}
